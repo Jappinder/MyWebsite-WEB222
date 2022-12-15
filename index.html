@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Portfolio Website</title>
+	<link rel="icon" type="image/x-icon" href="images/me.png"> 
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+	<!-- Importing css file -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!-- /header and first section in the website-->
+	<header class="header">
+		<div class="sub_header_container">
+			<figure class="image_container panel" data-animate-scroll='{"x": "-20", 
+                    "alpha": "0", 
+                    "duration": "1"}'></figure>
+			<div class="info_container panel">
+				<h1 data-animate-scroll='{"x": "-20", 
+                    "alpha": "0", 
+                    "duration": "1"}'>Jappinderdeep Singh</h1>
+				<p data-animate-scroll='{"x": "-20", 
+                    "alpha": "0", 
+                    "duration": "1"}'>Computer Programmer</p>
+				<div class="actions" data-animate-scroll='{"x": "-20", 
+                    "alpha": "0", 
+                    "duration": "1"}'>
+					<a href="files/Resume-Jappinderdeep Singh.pdf" target="_blank" id="resume" download>
+						<i class="bi bi-download"></i> Resume <span id="hash1">#</span></a>
+					<a href="#contact_us" id="contact">Contact me <span id="hash2">#</span></a>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- second section -->
+	<section class="main_info_container">
+		<div class="max_wi">
+			<div class="col col1 panel" data-animate-scroll='{"x": "-20", 
+                    "alpha": "0", 
+                    "duration": "1"}'>
+				<div>
+					<article>
+						<h2><u>Academic Integrity and Honesty</u></h2>
+						<p>
+							I declare that my assessment is wholly my own work in accordance with Seneca Academic
+							Policy. No part of this assessment has been copied manually or electronically from any other
+							source (including web sites) except for the information supplied by the WEB222 instructors
+							and / or made available in this assessment for my use. I also declare that no part of this
+							assignment has been distributed to other students.
+						</p>
+					</article>
+				</div>
+			</div>
+			<div class="col col2 panel" data-animate-scroll='{"x": "-20", 
+                    "alpha": "0", 
+                    "duration": "1"}'>
+				<div>
+					<h2><u>Basic Information</u></h2>
+					<table>
+						<tr>
+							<th>NAME:</th>
+							<td>Jappinderdeep Singh</td>
+						</tr>
+						<tr>
+							<th>EMAIL:</th>
+							<td>jappinderdeep-singh@myseneca.ca</td>
+						</tr>
+						<tr>
+							<th>LANGUAGE:</th>
+							<td>English and Punjabi</td>
+						</tr>
+						<tr>
+							<th>COURSE:</th>
+							<td>WEB222</td>
+						</tr>
+						<tr>
+							<th>SECTION:</th>
+							<td>NFF</td>
+						</tr>
+						<tr>
+							<th>PROFESSOR:</th>
+							<td>Mark Meritt</td>
+						</tr>
+					</table>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="education_container">
+		<div class="info">
+			<div class="info_head">
+				<h4 class="panel" data-animate-scroll='{"x": "-20", 
+                    "alpha": "0", 
+                    "duration": "1"}'>Diploma</h4>
+				<h2 class="panel" data-animate-scroll='{"x": "-20", 
+                    "alpha": "0", 
+                    "duration": "1"}'>2022-2023</h2>
+			</div>
+			<div class="info_body">
+				<h2 class="panel" data-animate-scroll='{"x": "-20", 
+                    "alpha": "0", 
+                    "duration": "1"}'>Seneca College of Applied Arts and Technology</h2>
+				<p class="panel" data-animate-scroll='{"x": "-20", 
+                    "alpha": "0", 
+                    "duration": "1"}'>Computer Programming Diploma</p>
+			</div>
+		</div>
+		<div class="info">
+			<div class="info_head">
+				<h4 class="panel" data-animate-scroll='{"x": "-20", 
+                    "alpha": "0", 
+                    "duration": "1"}'>Secondary Education</h4>
+				<h2 class="panel" data-animate-scroll='{"x": "-20", 
+                    "alpha": "0", 
+                    "duration": "1"}'>2006-2021</h2>
+			</div>
+			<div class="info_body">
+				<h2 class="panel" data-animate-scroll='{"x": "-20", 
+                    "alpha": "0", 
+                    "duration": "1"}'>Sacred Heart Convent Senior Secondary School, India</h2>
+				<p class="panel" data-animate-scroll='{"x": "-20", 
+                    "alpha": "0", 
+                    "duration": "1"}'>Nursery to 12th grade</p>
+			</div>
+		</div>
+	</section>
+	<footer class="contact_form_container" id="contact_us">
+		<form action="https://httpbin.org/post" method="post" accept-charset="utf-8">
+			<h2>Contact Me</h2>
+			<div class="input-label">
+				<label>Name</label>
+				<input required type="text" name='name' placeholder="Name" id="name">
+			</div>
+			<div class="input-label">
+				<label>Email</label>
+				<input required type="email" name='email' placeholder="Email Address" id="email">
+			</div>
+			<div class="input-label">
+				<label>Address</label>
+				<input required type="text" name='address' placeholder="Address" id="addr">
+			</div>
+			<div class="input-label">
+				<label for="city">City</label>
+				<input required type="text" id="city" name="city" list="suggestions" placeholder="City" />
+			</div>
+			<datalist id="suggestions">
+				<option label="Iqualuit" value="Iqualuit"></option>
+				<option label="Ottawa" value="Ottawa"></option>
+				<option label="Miramichi" value="Miramichi"></option>
+				<option label="Montreal" value="Montreal"></option>
+				<option label="Red Deer" value="Red Deer"></option>
+				<option label="St. John" value="St. John"></option>
+				<option label="St. John's" value="St. John's"></option>
+				<option label="Toronto" value="Toronto"></option>
+				<option label="Vancouver" value="Vancouver"></option>
+				<option label="Whitehorse" value="Whitehorse"></option>
+				<option label="Winnipeg" value="Winnipeg"></option>
+				<option label="Yellowknife" value="Yellowknife"></option>
+				<option label="Barrie" value="Barrie"></option>
+				<option label="Calgary" value="Calgary"></option>
+				<option label="Charlottetown" value="Charlottetown"></option>
+				<option label="Chibougamau" value="Chibougamau"></option>
+				<option label="Chilliwack" value="Chilliwack"></option>
+				<option label="Cold Lake" value="Cold Lake"></option>
+				<option label="Dorval" value="Dorval"></option>
+				<option label="Edmonton" value="Edmonton"></option>
+				<option label="Flin Flon" value="Flin Flon"></option>
+				<option label="Hamilton" value="Hamilton"></option>
+			</datalist>
+			<div class="input-label">
+				<label>Postal Code</label>
+				<input required type="text" name="postal" placeholder="Postal Code" id="postal_code">
+				<i class="bi bi-info-circle"></i>
+			</div>
+			<div class="radio_buttons">
+				<div>
+					<label>Question</label>
+					<input required type="radio" id="question" name='question' value="question">
+				</div>
+				<div>
+					<label>Comment</label>
+					<input required type="radio" id="comment" name='comment' value="comment">
+				</div>
+			</div>
+			<div class="input-label" id="hourly_rate"></div>
+			<label>Message</label>
+			<textarea name="message" required placeholder="Message.."></textarea>
+			<div class="input-label" id="other">
+				<label>Other </label>
+				<input required type="text" name="other" placeholder="Miscellaneous">
+				<i class="bi bi-info-circle"></i>
+			</div>
+			<input required type="submit" name="send" value="send" id="send_btn">
+		</form>
+	</footer>
+	<!-- labriries for scroll animation -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.1/js/foundation.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/plugins/ScrollToPlugin.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/plugins/EaselPlugin.min.js"></script>
+	<script src="js/animate-scroll.js"></script>
+	<!-- my js script -->
+	<script src="js/script.js"></script>
+</body>
+
+</html>
